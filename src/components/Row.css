@@ -1,0 +1,32 @@
+.row {
+  margin: 20px;
+  color: #fff;
+}
+
+.row__container {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row__container::-webkit-scrollbar {
+  display: none;
+}
+
+.row__containerImg {
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.row__containerImg:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.row__largeRow {
+  max-height: 250px;
+}
